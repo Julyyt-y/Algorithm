@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp">
+
+    <!--<calendar.NewCalendar-->
+        <!--xmlns:NewCalendarNS = "http://schemas.android.com/apk/res/com.example.aaa.NewCalendar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--NewCalendarNS:dateFormat="MMMM yyyy"-->
+        <!--android:id="@+id/newCalendar">-->
+    <!--</calendar.NewCalendar>-->
+
+    <calendar.NewCalendar
+        android:id="@+id/newCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="15dp"
+        app:dateFormat="MMMM yyyy">
+    </calendar.NewCalendar>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/image_view"/>
+
+    <TextView
+        android:id="@+id/hue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/image_view"
+        android:text="色相" />
+    <SeekBar
+        android:id="@+id/seekbarHue"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/image_view"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/saturation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/seekbarHue"
+        android:text="饱和度" />
+    <SeekBar
+        android:id="@+id/seekbarSaturation"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/seekbarHue"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:layout_below="@id/seekbarSaturation"
+        android:text="亮度" />
+    <SeekBar
+        android:id="@+id/seekbarLum"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/seekbarSaturation"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
